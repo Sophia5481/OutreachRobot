@@ -55,17 +55,17 @@ public class ClawBotTeleOp extends OpMode {
     public void loop() {
         /* ------------------------------------ Drive ------------------------------------ */
         //Drive motor controls
-        double lx = gamepad1.left_stick_x;
-        double ly = -gamepad1.left_stick_y;
+        double lx = -gamepad1.left_stick_x;
+        double ly = gamepad1.left_stick_y;
         double speedMultiplier = OutreachConstants.joyStraight;
         double rotationMultiplier = OutreachConstants.joyTurn;
 
         if (gamepad1.dpad_up) {
-            ly = 1;
+            ly = -1;
             lx = 0;
             speedMultiplier = OutreachConstants.dpadStraight;
         } else if (gamepad1.dpad_down) {
-            ly = -1;
+            ly = 1;
             lx = 0;
             speedMultiplier = OutreachConstants.dpadStraight;
         }

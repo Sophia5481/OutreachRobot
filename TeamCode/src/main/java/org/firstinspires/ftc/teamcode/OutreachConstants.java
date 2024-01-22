@@ -10,10 +10,10 @@ public class OutreachConstants {
     public static double liftBot = 1;
     public static double liftRatio = 0.001;
 
-    public static double clawOpenB = 0.2;
-    public static double clawCloseB = 0.5;
-    public static double clawOpenA = 0.23;
-    public static double clawCloseA = 0.53;
+    public static double clawOpenB = 0.1;
+    public static double clawCloseB = 0.25;
+    public static double clawOpenA = 0.13;
+    public static double clawCloseA = 0.28;
 
     public static double dpadStraight = 0.15;
     public static double dpadSide = 0.3;

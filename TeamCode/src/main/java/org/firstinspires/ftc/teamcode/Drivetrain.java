@@ -61,11 +61,11 @@ public class Drivetrain {
         rb.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         rf.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
-        //lb.setDirection(DcMotorSimple.Direction.REVERSE);
-        //lf.setDirection(DcMotorSimple.Direction.REVERSE);
+        lb.setDirection(DcMotorSimple.Direction.REVERSE);
+        lf.setDirection(DcMotorSimple.Direction.REVERSE);
 
-        rf.setDirection(DcMotorSimple.Direction.REVERSE);
-        rb.setDirection(DcMotorSimple.Direction.REVERSE);
+        //rf.setDirection(DcMotorSimple.Direction.REVERSE);
+        //rb.setDirection(DcMotorSimple.Direction.REVERSE);
     }
     public void runMotors(double leftPower, double rightPower){
         lb.setPower(leftPower);
